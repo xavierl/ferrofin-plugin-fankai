@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Fankai",
+    "description": "Métadonnées et images des séries Fan-Kai (Kaï, Yabai, Henshū…) depuis l'API communautaire metadata.fankai.fr.",
+    "overview": "Métadonnées et images des séries Fan-Kai (Kaï, Yabai, Henshū…) depuis l'API communautaire metadata.fankai.fr.",
+    "owner": "xavierl",
+    "category": "Metadata",
+    "guid": "dd133b6f-371b-446b-9075-f071aca1f995",
+    "versions": [
+      {
+        "version": "0.1.0",
+        "targetAbi": "ferrofin:plugin@0.5.0",
+        "sourceUrl": "https://github.com/xavierl/ferrofin-plugin-fankai/releases/download/v0.1.0/ferrofin_plugin_fankai.wasm",
+        "checksum": "12d6dd1e09b8e6097302c39da26cec4a",
+        "sha256": "48ca23e6350901f50549204d863d10d873b04cd9d9fc99c443cd85d02606fbe7",
+        "timestamp": "2026-11-04T17:17:33Z",
+        "repositoryName": "xavierl/ferrofin-plugin-fankai",
+        "repositoryUrl": "https://github.com/xavierl/ferrofin-plugin-fankai"
+      }
+    ]
+  }
+]
