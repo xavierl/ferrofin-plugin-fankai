@@ -1,0 +1,41 @@
+# ─────────────────────────────────────────────────────────────────────────
+# Fankai pour Ferrofin — portage WASM du plugin Jellyfin/Emby Fankai
+# (https://github.com/Nackophilz/fankai_plugin).
+#
+# Build:  ./build.sh   (ou : cargo build --release --target wasm32-wasip2)
+# Sortie: dist/ferrofin_plugin_fankai.wasm → {ferrofin_data_dir}/plugins/, puis redémarrage
+# ─────────────────────────────────────────────────────────────────────────
+[package]
+name = "ferrofin-plugin-fankai"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+description = "Métadonnées et images Fankai (metadata.fankai.fr) pour Ferrofin."
+repository = "https://github.com/xavierl/ferrofin-plugin-fankai"
+publish = false
+
+# ── Identité du plugin — source unique (lue par build.rs et scripts/gen-manifest.sh) ──
+[package.metadata.ferrofin]
+guid = "dd133b6f-371b-446b-9075-f071aca1f995"
+name = "Fankai"
+description = "Métadonnées et images des séries Fan-Kai (Kaï, Yabai, Henshū…) depuis l'API communautaire metadata.fankai.fr."
+owner = "xavierl"
+category = "Metadata"
+# TOUT l'accès réseau du plugin : l'API Fankai, qui sert aussi les images.
+egress = ["metadata.fankai.fr"]
+
+[workspace]
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+wit-bindgen = "0.60"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+unicode-normalization = "0.1"
+
+[profile.release]
+opt-level = "s"
+lto = true
+strip = true

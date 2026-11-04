@@ -1,0 +1,42 @@
+<div id="fankaiConfigPage" data-role="page" class="page type-interior pluginConfigurationPage">
+  <div data-role="content"><div class="content-primary">
+    <form class="fankaiConfigForm">
+      <h1>Fankai <small>v{VERSION}</small></h1>
+      <p>Métadonnées et images des séries Fan-Kai depuis
+        <a is="emby-linkbutton" class="button-link" href="https://metadata.fankai.fr" target="_blank">metadata.fankai.fr</a>.
+        Pour l'activer : <b>Tableau de bord → Bibliothèques → (votre bibliothèque) → Gérer la bibliothèque</b>,
+        cochez <b>Fankai</b> dans les récupérateurs de métadonnées et d'images des séries, saisons et épisodes,
+        placez-le en tête, puis actualisez les métadonnées.</p>
+      <div class="inputContainer">
+        <label class="inputLabel" for="fankaiApiKey">Clé d'API Fankai (facultative)</label>
+        <input is="emby-input" id="fankaiApiKey" type="text" autocomplete="off" />
+        <div class="fieldDescription">Envoyée dans l'en-tête X-API-Key. Laissez vide si vous n'en avez pas.</div>
+      </div>
+      <button is="emby-button" type="submit" class="raised button-submit block"><span>Enregistrer</span></button>
+    </form>
+  </div></div>
+  <script type="text/javascript">
+  (function () {
+    var pluginId = '{PLUGIN_ID}';
+    var page = document.querySelector('#fankaiConfigPage');
+    page.addEventListener('pageshow', function () {
+      Dashboard.showLoadingMsg();
+      ApiClient.getPluginConfiguration(pluginId).then(function (config) {
+        page.querySelector('#fankaiApiKey').value = config.FankaiApiKey || '';
+        Dashboard.hideLoadingMsg();
+      }).catch(Dashboard.processErrorResponse);
+    });
+    page.querySelector('.fankaiConfigForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      Dashboard.showLoadingMsg();
+      ApiClient.getPluginConfiguration(pluginId).then(function (config) {
+        config.FankaiApiKey = page.querySelector('#fankaiApiKey').value.trim();
+        ApiClient.updatePluginConfiguration(pluginId, config).then(
+          Dashboard.processPluginConfigurationUpdateResult
+        ).catch(Dashboard.processErrorResponse);
+      }).catch(Dashboard.processErrorResponse);
+      return false;
+    });
+  })();
+  </script>
+</div>

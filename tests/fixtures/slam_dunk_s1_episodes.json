@@ -1,0 +1,88 @@
+{
+ "episodes": [
+  {
+   "aired": "2020-03-26",
+   "audio_info": "aac",
+   "date_added": "2022-08-22 21:16:07",
+   "display_episode": "1",
+   "display_season": "1",
+   "duration": 7380,
+   "episode_number": 1,
+   "formatted_name": "Slam Dunk Kaï.S01E01.VOSTFR.1080p.x264-FANKAI",
+   "id": 1186,
+   "last_update": 1788958803.3595033,
+   "links": {
+    "season": "/seasons/192",
+    "serie": "/series/79"
+   },
+   "mpaa": "",
+   "nfo_filename": "[Titou] Slam dunk Kaï film 01 - Un voyou au grand coeur - VOSTFR X264 1080p.nfo",
+   "nfo_path": "Slam Dunk Kaï/Saison 1/[Titou] Slam dunk Kaï film 01 - Un voyou au grand coeur - VOSTFR X264 1080p.nfo",
+   "original_filename": "[Titou] Slam dunk Kaï film 01 - Un voyou au grand coeur - VOSTFR X264 1080p.mkv",
+   "plot": "Après avoir pris un râteau par Yoko, une fille qu'il aimait beaucoup, Sakuragi Hanamichi était dévasté. Lors de sa rentrée à l'école, il est approché par une fille qui lui demande s'il aime le basketball ou non. Il répond immédiatement qu'il adore ça alors qu'il n'a aucune idée de comment y jouer.\r\r\r\n\r\r\r\nCe film couvre les épisodes 1 à 9.",
+   "season_id": 192,
+   "show_title": "Slam Dunk Kaï",
+   "studio": "Titou - Fan-Kai",
+   "subtitle_info": "fre",
+   "thumb_image": "https://metadata.fankai.fr/episodes/1186/image?t=1788958803",
+   "title": "Un Voyou au Grand Coeur"
+  },
+  {
+   "aired": "2020-04-14",
+   "audio_info": "aac",
+   "date_added": "2022-08-22 21:16:07",
+   "display_episode": "2",
+   "display_season": "1",
+   "duration": 9060,
+   "episode_number": 2,
+   "formatted_name": "Slam Dunk Kaï.S01E02.VOSTFR.1080p.x264-FANKAI",
+   "id": 1188,
+   "last_update": 1788958803.3595033,
+   "links": {
+    "season": "/seasons/192",
+    "serie": "/series/79"
+   },
+   "mpaa": "",
+   "nfo_filename": "[Titou] Slam dunk Kaï film 02 - L'arme secrète - VOSTFR X264 1080p.nfo",
+   "nfo_path": "Slam Dunk Kaï/Saison 1/[Titou] Slam dunk Kaï film 02 - L'arme secrète - VOSTFR X264 1080p.nfo",
+   "original_filename": "[Titou] Slam dunk Kaï film 02 - L'arme secrète - VOSTFR X264 1080p.mkv",
+   "plot": "Sakuragi décline la proposition que lui fait Aota, qui voulait qu'il rejoigne son club de Judo. Kogure et Ayako sont très enjoués en l'apprenant et Akagi est très impressionné par les mots de Sakuragi.\r\r\r\n\r\r\r\nCe film couvre les épisodes 9 à 19.",
+   "season_id": 192,
+   "show_title": "Slam Dunk Kaï",
+   "studio": "Titou - Fan-Kai",
+   "subtitle_info": "fre",
+   "thumb_image": "https://metadata.fankai.fr/episodes/1188/image?t=1788958803",
+   "title": "L'Arme Secrète"
+  },
+  {
+   "aired": "2020-04-21",
+   "audio_info": "aac",
+   "date_added": "2022-08-22 21:16:07",
+   "display_episode": "3",
+   "display_season": "1",
+   "duration": 10380,
+   "episode_number": 3,
+   "formatted_name": "Slam Dunk Kaï.S01E03.VOSTFR.1080p.x264-FANKAI",
+   "id": 1191,
+   "last_update": 1788958803.3595033,
+   "links": {
+    "season": "/seasons/192",
+    "serie": "/series/79"
+   },
+   "mpaa": "",
+   "nfo_filename": "[Titou] Slam dunk Kaï film 03 - Règlement de comptes - VOSTFR X264 1080p.nfo",
+   "nfo_path": "Slam Dunk Kaï/Saison 1/[Titou] Slam dunk Kaï film 03 - Règlement de comptes - VOSTFR X264 1080p.nfo",
+   "original_filename": "[Titou] Slam dunk Kaï film 03 - Règlement de comptes - VOSTFR X264 1080p.mkv",
+   "plot": "Haruko accompagne Sakuragi au magasin de sports pour acheter une nouvelle paire de chaussures parce que sa vieille paire est en mauvais état après l'entraînement avec Ryonan.\r\r\r\n\r\r\r\nCe film couvre les épisodes 20 à 27.",
+   "season_id": 192,
+   "show_title": "Slam Dunk Kaï",
+   "studio": "Titou - Fan-Kai",
+   "subtitle_info": "fre",
+   "thumb_image": "https://metadata.fankai.fr/episodes/1191/image?t=1788958803",
+   "title": "Règlement de comptes"
+  }
+ ],
+ "episodes_count": 9,
+ "season_number": 1,
+ "serie_title": "Slam Dunk Kaï"
+}
